@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b908e09b-363a-4af4-9f32-c8ac5ac4bc6d"
+      }
+    },
+    "owner": "edgardapi"
   }
 }
