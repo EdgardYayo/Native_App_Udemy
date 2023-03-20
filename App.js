@@ -1,16 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native';
-import Welcome from './components/Welcome';
+import { StatusBar } from 'react-native';
+// import Welcome from './components/Welcome';
+// import { WebView } from "react-native-webview";
+import Signup from './screens/Signup';
+
 
 export default function App() {
 
-  const names = ["Marlen", "Edgard", "Jose Angel", "Rosalinda"]
-
   return (
-    <View style={styles.container}>
-      {names.map((name) => (
-        <Welcome name={name}/>
-      ))}
-    </View>
+   <Signup />
   );
 }
 
@@ -22,3 +20,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+// const names = ["Marlen", "Edgard", "Jose Angel", "Rosalinda"]
+
+// <WebView source={{ uri: "https://codecontinue.com" }}/>
+
+// <View style={styles.container}>
+// {names.map((name) => (
+//   <Welcome key={name} name={name}/>
+// ))}
+// </View>
